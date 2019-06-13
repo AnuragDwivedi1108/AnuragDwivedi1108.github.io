@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
 #loading {
     background: url('loaderp.gif') no-repeat center center;
     position: fixed;
@@ -48,7 +71,7 @@ border: 2px solid black;
 
 }
 .zoom:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   border: 100 px solid blue;
 }
 
@@ -72,7 +95,7 @@ border: 2px solid black;
   
 
 #progressbar {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 13px;
   /* (height of inner div) / 2 + padding */
@@ -88,7 +111,7 @@ border: 2px solid black;
 }
 
 #progressbar1 {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 13px;
   /* (height of inner div) / 2 + padding */
@@ -105,7 +128,7 @@ border: 2px solid black;
 
 
 #progressbar2 {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 13px;
   /* (height of inner div) / 2 + padding */
@@ -122,7 +145,7 @@ border: 2px solid black;
 
 
 #progressbar3 {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 13px;
   /* (height of inner div) / 2 + padding */
@@ -139,7 +162,7 @@ border: 2px solid black;
 
 
 #progressbar4 {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 13px;
   /* (height of inner div) / 2 + padding */
@@ -154,7 +177,7 @@ border: 2px solid black;
   border-radius: 10px;
 }
 #progressbar5 {
-  width: 70%;
+  width: 80%;
   background-color: black;
   border-radius: 13px;
   /* (height of inner div) / 2 + padding */
@@ -181,3 +204,23 @@ border: 2px solid black;
 }
 
 
+div.card {
+  margin: 10px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#panel {
+  padding: 10px;
+
+}
+
+[data-aos="example-anim1"] {
+  transform: skewX(45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 1;
+  }
+}
